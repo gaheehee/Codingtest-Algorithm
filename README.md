@@ -13,6 +13,8 @@
 * map(func,x): 리스트 x의 각 요소에 func을 적용
 * set(list): list에서 중복된 값을 제거(set: 집합 자료형)
 * len(list): list 요소 개수
+* min(list) or max(list): list 요소 중 최소/최대 
+* sum(list): list 모든 요소의 합
 
 <br>
 
