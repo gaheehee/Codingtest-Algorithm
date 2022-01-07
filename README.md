@@ -8,13 +8,16 @@
 <br>
 
 ### 사용한 Python 문법
-### List 문법
+### List / Set 문법
 * list(string): 한 문자씩 나누기([]배열)
 * map(func,x): 리스트 x의 각 요소에 func을 적용
 * set(list): list에서 중복된 값을 제거(set: 집합 자료형)
 * len(list): list 요소 개수
 * min(list) or max(list): list 요소 중 최소/최대 
 * sum(list): list 모든 요소의 합
+* set(): 집합 생성, 중복 값 x
+* set(range(0,100)): 0-99까지의 값이 든 집합
+* sorted(list or set): 정렬
 
 <br>
 
