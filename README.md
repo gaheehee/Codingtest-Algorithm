@@ -21,6 +21,9 @@
 * string.index(a): string안에 a가 존재하는 인덱스 반환
 * input().split()하면 문자열 앞에 ' '공백이 와도 리스트에 포함되지 않는다.
 * TypeError: 'set' object is not subscriptable -> list(set(upperlist))처럼 집합형태로 바꾼 후 리스트 형태로 바꿔야지 index를 통한 접근이 가능
+* list.reverse(): 리스트 요소 순서 뒤집기
+* reversed(string): 문자열 뒤집기-> reversed object 타입 반환
+* "".join(reversed(string)): 문자열 뒤집어서 string 타입으로
 
 <br>
 
