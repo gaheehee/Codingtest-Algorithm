@@ -19,6 +19,8 @@
 * set(range(0,100)): 0-99까지의 값이 든 집합
 * sorted(list or set): 정렬
 * string.index(a): string안에 a가 존재하는 인덱스 반환
+* input().split()하면 문자열 앞에 ' '공백이 와도 리스트에 포함되지 않는다.
+* TypeError: 'set' object is not subscriptable -> list(set(upperlist))처럼 집합형태로 바꾼 후 리스트 형태로 바꿔야지 index를 통한 접근이 가능
 
 <br>
 
@@ -30,3 +32,7 @@
 * '%0.3f%%' % float(수): 값 뒤에 % 붙음
 * ord(문자): 아스키코드 값 반환
 * chr(숫자): 아스키코드 값 반환
+* string.upper(): 문자열 대문자로 (string에 원하는문자열)
+* string.lower(): 문자열 소문자로
+* string.isupper(): 문자가 대문자인지 확인
+* string.islower(): 문자가 소문자인지 확인
