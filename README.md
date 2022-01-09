@@ -18,6 +18,7 @@
 * set(): 집합 생성, 중복 값 x
 * set(range(0,100)): 0-99까지의 값이 든 집합
 * sorted(list or set): 정렬
+* string.index(a): string안에 a가 존재하는 인덱스 반환
 
 <br>
 
