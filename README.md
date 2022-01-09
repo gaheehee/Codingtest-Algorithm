@@ -24,6 +24,7 @@
 * list.reverse(): 리스트 요소 순서 뒤집기
 * reversed(string): 문자열 뒤집기-> reversed object 타입 반환
 * "".join(reversed(string)): 문자열 뒤집어서 string 타입으로
+* str.replace("aa","b"): str문자열에서 aa를 b로 변경, 삭제는 ""
 
 <br>
 
