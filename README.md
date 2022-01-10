@@ -40,3 +40,8 @@
 * string.lower(): 문자열 소문자로
 * string.isupper(): 문자가 대문자인지 확인
 * string.islower(): 문자가 소문자인지 확인
+
+<br>
+
+### 라이브러리
+* math.ceil(num): 소수점 올림 처리해서 정수로(import math)
