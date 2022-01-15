@@ -45,3 +45,4 @@
 
 ### 라이브러리
 * math.ceil(num): 소수점 올림 처리해서 정수로(import math)
+* math.sqrt(num): 제곱근
