@@ -36,6 +36,7 @@
 * '%0.3f%%' % float(수): 값 뒤에 % 붙음
 * ord(문자): 아스키코드 값 반환
 * chr(숫자): 아스키코드 값 반환
+* abs(num): 절대값
 * string.upper(): 문자열 대문자로 (string에 원하는문자열)
 * string.lower(): 문자열 소문자로
 * string.isupper(): 문자가 대문자인지 확인
