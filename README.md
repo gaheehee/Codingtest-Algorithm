@@ -53,3 +53,4 @@
 ### 라이브러리
 * math.ceil(num): 소수점 올림 처리해서 정수로(import math)
 * math.sqrt(num): 제곱근
+* combinations(반복 가능한 객체, n): n=몇개를 뽑을 것인지, 순서 의미 X, 중복 X (import itertools 필요)
