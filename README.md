@@ -35,6 +35,7 @@
 ### 문법
 * '구분자'.join(리스트): ex)'_'.join(['a', 'b', 'c']) -> "a_b_c"
 * readline().strip(): 개행문자 제거
+* dictionary = {key: value} : 인덱싱할 때 시간 적게 듦
 
 
 
