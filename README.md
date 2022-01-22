@@ -54,3 +54,5 @@
 * math.ceil(num): 소수점 올림 처리해서 정수로(import math)
 * math.sqrt(num): 제곱근
 * combinations(반복 가능한 객체, n): n=몇개를 뽑을 것인지, 순서 의미 X, 중복 X (import itertools 필요)
+* numpy.median(list): 중간값(numpy import 필요) *데이터가 짝수 개일 경우에는 가운데 두 값의 평균 리턴
+* count = collections.Counter(arr).most_common(2): arr리스트에서 빈도 가장 높은거 2개 리턴  -> [(-2, 2), (-1, 2)] 이런 식으로 [(값, 빈도수) 리턴
