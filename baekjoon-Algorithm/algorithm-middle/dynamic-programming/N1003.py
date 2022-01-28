@@ -7,20 +7,16 @@ N이 주어졌을 때, fibonacci(N)을 호출했을 때, 0과 1이 각각 몇 �
 import sys
 
 n = int(sys.stdin.readline())
+nlist = []
 
-# import sys
+for _ in range(n):
+    nlist.append(int(sys.stdin.readline()))
 
-# n = int(sys.stdin.readline())
-# nlist = []
+num = max(nlist)
+arr = [(1,0), (0,1)]
 
-# for _ in range(n):
-#     nlist.append(int(sys.stdin.readline()))
+for i in range(num-1):
+    arr.append((arr[i][0] + arr[i+1][0], arr[i][1] + arr[i+1][1]))
 
-# num = max(nlist)
-# arr = [(1,0), (0,1)]
-
-# for i in range(num-1):
-#     arr.append((arr[i][0] + arr[i+1][0], arr[i][1] + arr[i+1][1]))
-
-# for k in nlist:
-#     print(arr[k][0], arr[k][1], sep=' ')
+for k in nlist:
+    print(arr[k][0], arr[k][1], sep=' ')
