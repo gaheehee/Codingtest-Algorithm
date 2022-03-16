@@ -13,9 +13,10 @@ N개의 수가 주어졌을 때, 가능한 M을 모두 찾는 프로그램을 �
 import sys
 
 n = int(sys.stdin.readline())
-nlist = list()
-for i in range(n):
-    nlist.append(int(sys.stdin.readline()))
+nlist = list(int(sys.stdin.readline() for _ in range(n)))
+nlist.sort()
+
+
 
 result = list()
 for i in range(2,min(nlist)):
