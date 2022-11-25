@@ -1,33 +1,48 @@
-'''
-트럭을 타고 이동하던 상근이는 경찰의 검문을 받게 되었다. 
-경찰은 상근이가 운반하던 화물을 하나하나 모두 확인할 것이기 때문에, 검문하는데 엄청나게 오랜 시간이 걸린다.
+# n = int(input())
+# nlist = list(int(input()) for _ in range(n))
+# nlist.sort()
 
-상근이는 시간을 때우기 위해서 수학 게임을 하기로 했다.
+# result = list()
 
-먼저 근처에 보이는 숫자 N개를 종이에 적는다. 
-그 다음, 종이에 적은 수를 M으로 나누었을 때, 나머지가 모두 같게 되는 M을 모두 찾으려고 한다. M은 1보다 커야 한다.
+# for i in range(2, min(nlist)+1):
+#     compare = nlist[0] % i
+#     flag = 1
 
-N개의 수가 주어졌을 때, 가능한 M을 모두 찾는 프로그램을 작성하시오.
-'''
+#     for num in nlist:
+#         k = num % i
+#         if compare != k:
+#             flag = 0
+#             break
+    
+#     if flag == 1:
+#         result.append(i)
 
-import sys
-
-n = int(sys.stdin.readline())
-nlist = list(int(sys.stdin.readline() for _ in range(n)))
-nlist.sort()
+# for num in result:
+#     print(num, end=" ")
 
 
+import math
+n = int(input())
+temp = []
+result = []
+gcd = 0
 
-result = list()
-for i in range(2,min(nlist)):
-    a = nlist[0] % i
-    check = 1
-    for j in nlist:
-        if j % i != a:
-            check = 0
-            break
-    if check == 1:
+for i in range(n):
+    temp.append(int(input()))
+    if i == 1:
+        gcd = abs(temp[1] - temp[0])
+    gcd = math.gcd(abs(temp[i] - temp[i - 1]), gcd)
+
+gcd_a = int(gcd ** 0.5)
+
+for i in range(2, gcd_a + 1):
+    if gcd % i == 0:
         result.append(i)
+        result.append(gcd // i)
+
+result.append(gcd)
+result = list(set(result))
+result.sort()
 
 for i in result:
-    print(i, end=' ')
+    print(i, end = ' ')
