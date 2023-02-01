@@ -5,6 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/queue" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/stack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/cumulative-sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/dynamic-programming" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
