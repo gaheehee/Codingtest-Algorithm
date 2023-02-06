@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/stack" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/cumulative-sum" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/algorithm-middle/dynamic-programming" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/baekjoon-Algorithm/Stage1-10/stage4" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
