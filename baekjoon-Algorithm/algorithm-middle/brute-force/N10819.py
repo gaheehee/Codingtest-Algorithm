@@ -1,34 +1,19 @@
 import sys
-from collections import deque
+from itertools import permutations
 
 input = sys.stdin.readline
 
 N = int(input())
 nlist = list(map(int, input().split()))
-
-nlist.sort()
-nlist = deque(nlist)
-imm = [0] * N
-
-flag = False
-n, m = 0, 0
-half = N // 2
 result = 0
 
-for i in range(half):
-    if not flag:
-        flag = True
-        n = nlist.pop()
-        m = nlist.popleft()
-    else:
-        flag = False
-        n = nlist.popleft()
-        m = nlist.pop()
+per = permutations(nlist)
 
-    imm[half-1-i] = n
-    imm[half+i] = m
+for p in per:
+    s = 0
+    for i in range(N - 1):
+        s += abs(p[i] - p[i+1])
 
-for i in range(N-1):
-    result += abs(imm[i] - imm[i+1])
+    result = max(result, s)
 
 print(result)
